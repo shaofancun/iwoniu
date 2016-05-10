@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1">
+		<meta name="keywords" content="" />
+		<meta name="Copyright" content="" />
+		<meta name="Description" content="">
+		<title>火星校园-企业认证</title>
+		<link rel="stylesheet" href="css/bootstrap.css" type="text/css" />
+		<link rel="stylesheet" href="css/buttons.css" type="text/css"/>
+		<link rel="stylesheet" href="css/font-awesome.min.css" />
+		<link rel="stylesheet" href="css/cj.css" type="text/css" />
+		<link rel="stylesheet" href="css/style.css" type="text/css" />
+		<link rel="stylesheet" href="css/user.css" type="text/css" />
+	    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+	    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	    <!--[if lt IE 9]>
+	      <script src="http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+	      <script src="http://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+	    <![endif]-->	
+	</head>
+	<body>
+		<!--头部-->
+		<header>
+			<div class="header">
+				<!--LOGO-->
+				<a href="index.html" title="火星校园"><img src="img/LOGO.png" class="logo"/></a>
+				<!--导航-->
+				<nav>
+					<ul>
+						<li><a href="index.html">首页</a></li>
+						<li><a href="co_index.html">会员中心</a></li>
+						<li><a href="co_recruitment.html">工作招聘</a></li>					
+						<li><a href="message.html">站内信</a></li>
+						<li>&nbsp;</li>
+						<!--地区定位-->
+						<li><a href="#">温州</a></li>
+					</ul>
+				</nav>
+				<!--搜索-->
+				<div class="search">
+					<form  action="/LCWeb/Home/RecruitmentSearch" method="post" id="search_form">
+						<input type="text" id="SearchKey" name="SearchKey" placeholder="请输入关键字" class="search_inp" />
+						<input type="submit" class="seach_img" value="">
+					</form>
+				</div>
+				<!--登录注册-->
+				<div class="loginbox">
+					<!--未登录-->
+					<a href="login_user.html" class="button button-primary button-small">登录</a>
+					<!--已登录-->
+					<!-- <a href="user_index.html" class="button button-action button-small">会员中心</a> -->
+				</div>
+			</div>
+		</header>
+		<!--会员中心-->
+		<div class="userbox">
+			<div class="user_leftbox">
+				<dl>
+					<dt>账号管理</dt>
+					<dd><a href="co_profile.html">基本信息<i class="fa fa-chevron-right"></i></a></dd>
+					<dd><a href="co_map.html">电子地图<i class="fa fa-chevron-right"></i></a></dd>
+					<dd class="action"><a href="co_safe.html">安全&认证<i class="fa fa-chevron-right"></i></a></dd>
+
+				</dl>
+				<dl>
+					<dt>资金管理</dt>
+					<dd><a href="co_recharge.html">充值&提现<i class="fa fa-chevron-right"></i></a></dd>
+					<dd><a href="co_detailed.html">收支明细<i class="fa fa-chevron-right"></i></a></dd>
+					<dd><a href="co_bankcard.html">银行卡管理<i class="fa fa-chevron-right"></i></a></dd>
+				</dl>
+
+			</div>
+			<div class="user_rightbox">
+				<div class="mobile_box">
+					<div class="prompt"><i class="fa fa-exclamation-circle"></i>企业认证信息：企业信息只能填写一次，一旦填写，不能更改，认证此功能将享受更多功能！</div>
+					<div class="edit_stubz no1"></div>
+					<div class="user_nr">
+						<form class="form-horizontal resumeform" role="form" id="sturz" method="post" action="co_company_two.html">
+							<div class="user_nr">
+								<div class="form-group">
+						    		<label for="coname" class="form-left control-label">企业名称</label>
+								    <div class="form-right mt">
+								      <input type="text" class="form-control" id="coname" name="coname" placeholder="请输入企业名称">
+								    </div>
+								    <span class="" data-valmsg-for="realname" data-valmsg-replace="true"></span>
+						  		</div>
+								<div class="form-group">
+									<label class="form-left control-label">企业性质</label>
+									<div class="form-right mt">
+									   	<select class="form-control valid" name="conature">
+											<option>请选择</option>
+											<option value="1">私营企业</option>
+											<option value="2">三资企业</option>
+											<option value="3">股份制企业</option>
+											<option value="4">行政机关</option>
+											<option value="5">社会团体</option>
+											<option value="6">事业单位</option>
+											<option value="7">国有企业</option>
+											<option value="8">集体企业</option>
+											<option value="9">集体事业</option>
+											<option value="10">乡镇企业</option>
+									   	</select>				      
+									</div>
+								</div>
+								<div class="form-group">
+									<label class="form-left control-label">所属行业</label>
+									<div class="form-right mt">
+									   	<select class="form-control valid" name="conindustry">
+											<option>请选择</option>
+											<option value="1">综合性工商/实业公司</option>
+											<option value="2">电子/通讯/电器</option>
+											<option value="3">食品/粮油/烟草/日用品</option>
+											<option value="4">公关/市场/营销/会展</option>
+											<option value="5">制药/生物工程</option>
+											<option value="6">广告/企业策划/管理咨询</option>
+											<option value="7">教育/科研/培训/学术</option>
+											<option value="8">法律/社会服务</option>
+											<option value="9">传播/新闻/媒体/出版/影视/艺术</option>
+											<option value="10">金融/保险/投资/证券/银行</option>
+											<option value="11">旅游/餐饮/健身娱乐</option>
+											<option value="12">商业/贸易/进出口/批发/零售</option>
+											<option value="13">医疗卫生/药品/保健品/护理/美容</option>
+											<option value="14">计算机/网络/电子商务</option>
+											<option value="15">工程/制造/机械</option>
+											<option value="16">建筑/房地产/物业管理/安装工程/装潢</option>
+											<option value="17">石油/化工/原材料/能源</option>
+											<option value="18">服装/纺织/制帽/皮具/丝绒/鞋业</option>
+											<option value="19">农业/渔业/林业/牧业</option>
+											<option value="20">国家机关/公共事业</option>
+											<option value="21">城市规划/园林工程/环保</option>
+											<option value="22">协会/学会</option>
+											<option value="23">交通运输/物流/仓储</option>
+											<option value="24">造纸/印刷/包装/文体用品</option>
+											<option value="25">生产/制造业/模具加工</option>
+											<option value="26">矿山/冶金/地质</option>
+											<option value="27">五金交电/仪器仪表</option>
+											<option value="28">家具/家电/家居/木材及竹、藤、棕、草制品</option>
+											<option value="29">工艺美术/礼品/玩具/收藏品</option>
+											<option value="30">中介服务</option>
+											<option value="31">检验/检测/认证</option>
+											<option value="32">酒店/度假/生活服务</option>
+											<option value="33">电气/电力/水利</option>
+											<option value="34">航天/航空/航天研究与制造</option>
+											<option value="35">汽车及零配件</option>
+											<option value="36">其他</option>
+									   	</select>				      
+									</div>
+								</div>
+						  		<div class="form-group">
+						    		<label class="form-left control-label">营业执照</label>
+								    <div class="form-right mt">
+								      	<div id="uploader-img">
+								      		<!--用来存放item-->
+										    <div id="fileList" class="uploader-list"></div>
+										    <div id="filePicker">上传营业执照</div>
+										</div>
+								    </div>
+						  		</div>
+								<div class="form-group">
+								  	<label for="access" class="form-left control-label">成立时间</label>
+								    <div class="form-right mt">
+								      	<input type="text" onfocus="WdatePicker({dateFmt:'yyyy-MM'})" class="form-control" name="createtime"  id="access" placeholder="成立时间">
+								    </div>
+								</div>
+								<div class="form-group">
+									<label class="form-left control-label">所在地区</label>
+									<div class="form-right mt sanji">
+								   		<select class="form-control" id="s_province" name="s_province"></select>			      
+								   		<select class="form-control" id="s_city" name="s_city"></select>			      
+								   		<select class="form-control" id="s_county" name="s_county"></select>			      
+									</div>
+								</div>
+								<div class="form-group">
+								  	<label for="nickname" class="form-left control-label">公司地址</label>
+								  	<div class="form-right mt">
+								      	<input type="text" class="form-control" id="address" name="address" placeholder="公司详细地址">
+								    </div>
+								</div>
+								
+								<div class="form-group">
+								    <div class="mar-left3 form-right">
+								      <button type="submit" class="button button-block button-rounded button-primary" style="width: 38%;">确认</button>
+								    </div>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+				<div class="rmhelp">
+					<dl>
+						<dt><i class="fa fa-info-circle fa-2x"></i>说明</dt>
+						<dd> 1.上传营业执照名称必须与企业名称一致,否则无法通过审核。</dd>
+						<dd> 2.上传营业执照所传图片一律为JPG、JPEG、或GIF格式，图片大小为：500KB。</dd>
+						<dd> 3.上传的营业执照照片应该是清晰营业执照扫描件(请勿上传无关的图片)。</dd>
+					</dl>
+				</div>
+			</div>
+		</div>
+		<!--底部-->
+		<footer>Copyright ©2015  www.huoxingxiaoyuan.com  火星校园版权所有  </footer>
+	</body>
+</html>
+<script src="script/jquery-1.11.1.min.js" type="text/javascript"></script>
+<script src="script/bootstrap.min.js" type="text/javascript"></script>
+<script src="My97DatePicker/WdatePicker.js" type="text/javascript"></script>
+<script src="js/tongyong.js" type="text/javascript" ></script>
+<script src="webuploader/webuploader.js" type="text/javascript"></script>
+<script src="script/area.js" type="text/javascript"></script>
+<script src="js/company_rz.js" type="text/javascript"></script>

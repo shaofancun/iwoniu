@@ -1,0 +1,66 @@
+<html文件>
+
+<div class="form-group">
+	<label class="form-left control-label">评价工作</label>
+	<div class="form-right mt" style="width: 550px;">
+	   <ul class="eva_ul" id="eva_ul"></ul>					      
+	</div>
+	<!--评价保存hidden-->
+	<input type="hidden" name="change_eval" id="change_eval"/>
+</div>
+
+<js文件>
+1.页面加载就要运行的方法
+//加载评价模块
+eval_box.loading();
+
+2.评价方法
+//评价模块
+var save_arr = new Array();//已选评价
+var eval_box={
+	//加载所有评价
+	loading:function(){
+		var eval_array=[
+			{"Id":1,"Name":"1个字"},
+			{"Id":2,"Name":"2个个字"},
+			{"Id":3,"Name":"3个个个字"},
+			{"Id":4,"Name":"4个个个个字"},
+			{"Id":5,"Name":"5个个个个个字"},
+			{"Id":6,"Name":"6个个个个个个字"},
+			{"Id":7,"Name":"7个个个个个个个字"},
+			{"Id":8,"Name":"8个个个个个个个个字"}
+		]
+		var checkH="";//所有评价html
+		for(var i in eval_array){			
+			checkH+='<li onclick="eval_box.change(this,'+eval_array[i].Id+');" class="">'+eval_array[i].Name+'</li>';
+		}
+		$("#eva_ul").html(checkH);
+	},
+	//选择评价
+	change:function(obj,id){
+		if ($(obj).attr("class").indexOf("action") >= 0) {
+			$(obj).removeClass("action");
+			eval_box.save(id,"splice");
+		} else {
+			$(obj).addClass("action");
+			eval_box.save(id,"push");
+		}
+	},
+	//已选择的评价存入hidden
+	save:function(id,type){
+		switch (type) {
+			case "push" : 
+				save_arr.push(id);
+				break;
+			case "splice" : 
+				for (var i in save_arr){
+					if(save_arr[i]==id){
+						save_arr.splice(i,1);
+					} 
+				}
+				break;
+		}
+		console.log(save_arr);
+		$("#change_eval").val(save_arr);
+	}
+}

@@ -1,0 +1,98 @@
+﻿{
+	"success": true, 
+	"totalRows": 15, 
+	"curPage": 1,
+	"data": [
+		{
+			"ID": 1,
+			"position": "传单派发",
+			"position_id": 30,
+			"compan": "温州三信融民间融资信息服务有限公司",
+			"compan_id":11,
+			"feedback": 1,
+			"Date": "2015-4-23"
+		},
+		{
+			"ID": 2,
+			"position": "礼仪",
+			"position_id": 31,
+			"compan": "温州玛氏贸易有限公司",
+			"compan_id":12,
+			"feedback": 0,
+			"Date": "2015-4-23"
+		},
+		{
+			"ID": 3,
+			"position": "送菜员",
+			"position_id": 32,
+			"compan": "温州王朝大酒店",
+			"compan_id":13,
+			"feedback": 0,
+			"Date": "2015-4-23"
+		},
+		{
+			"ID": 4,
+			"position": "传单派发",
+			"position_id": 30,
+			"compan": "温州三信融民间融资信息服务有限公司",
+			"compan_id":11,
+			"feedback": 1,
+			"Date": "2015-4-23"
+		},
+		{
+			"ID": 5,
+			"position": "礼仪",
+			"position_id": 31,
+			"compan": "温州玛氏贸易有限公司",
+			"compan_id":12,
+			"feedback": 0,
+			"Date": "2015-4-23"
+		},
+		{
+			"ID": 6,
+			"position": "送菜员",
+			"position_id": 32,
+			"compan": "温州王朝大酒店",
+			"compan_id":13,
+			"feedback": 0,
+			"Date": "2015-4-23"
+		},
+		{
+			"ID": 7,
+			"position": "传单派发",
+			"position_id": 30,
+			"compan": "温州三信融民间融资信息服务有限公司",
+			"compan_id":11,
+			"feedback": 1,
+			"Date": "2015-4-23"
+		},
+		{
+			"ID": 8,
+			"position": "礼仪",
+			"position_id": 31,
+			"compan": "温州玛氏贸易有限公司",
+			"compan_id":12,
+			"feedback": 0,
+			"Date": "2015-4-23"
+		},
+		{
+			"ID": 9,
+			"position": "送菜员",
+			"position_id": 32,
+			"compan": "温州王朝大酒店",
+			"compan_id":13,
+			"feedback": 0,
+			"Date": "2015-4-23"
+		},
+		{
+			"ID": 10,
+			"position": "传单派发",
+			"position_id": 30,
+			"compan": "温州三信融民间融资信息服务有限公司",
+			"compan_id":11,
+			"feedback": 1,
+			"Date": "2015-4-23"
+		}
+		
+	]
+}

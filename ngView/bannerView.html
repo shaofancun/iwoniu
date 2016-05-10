@@ -1,0 +1,56 @@
+<div class="no_one">
+	<div class="no_onemian">
+		<ul class="rslides" id="dowebok">
+			<li><a href="javascript:;"><img src="img/no/banner4.jpg" alt=""></a></li>
+			<li><a href="javascript:;"><img src="img/no/banner1.jpg" alt=""></a>
+				<div class="title" style="top: 260px;">
+					<a class="ck" href="parttimejob.html"></a>
+					<a class="dw" href="javascript:;" data-toggle="modal" data-target="#ewm_down"></a>
+				</div>
+			</li>
+			<li><a href="javascript:;"><img src="img/no/banner2.jpg" alt="" style="z-index: 999;"></a></li>
+			<li><a href="javascript:;"><img src="img/no/banner3.jpg" alt=""></a>
+				<div class="title">
+					<a class="ck" href="parttimejob.html"></a>
+					<a class="dw" href="javascript:;" data-toggle="modal" data-target="#ewm_down"></a>
+				</div>
+			</li>
+		</ul>
+		<!--按钮-->
+		<!--二维码下载-->
+		<div class="modal fade" id="ewm_down"  tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+			<div class="modal-dialog" >
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span>
+						</button>
+						<h4 class="modal-title" id="myModalLabel">扫码下载APP</h4>
+					</div>
+					<div class="modal-body" style="overflow: hidden;">
+						<div class="js_down_ewm">
+							<!--android-->
+							<div>
+								<img src="img/and_down.png" />
+								<img src="img/and_down_bottom.png" />
+							</div>
+					   		<!--ios-->
+					   		<div>
+					   			<img src="img/ios_down.png" />
+					   			<img src="img/ios_down_bottom.png" />
+					   		</div>
+					   	</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<script src="script/responsiveslides.min.js" type="text/javascript"></script>
+<script>
+$(function() {
+	$('#dowebok').responsiveSlides({
+		pager: true,
+		namespace: 'centered-btns',
+	});
+});
+</script>

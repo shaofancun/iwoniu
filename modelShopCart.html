@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html ng-app="WN">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1">
+		<meta name="title" content="窝牛，简单、靠谱、高效的大学生兼职平台">
+		<meta name="keywords" content="窝牛，简单、靠谱、高效的大学生兼职平台" />
+		<meta name="Copyright" content="窝牛，简单、靠谱、高效的大学生兼职平台" />
+		<meta name="Description" content="窝牛，简单、靠谱、高效的大学生兼职平台">
+		<title>窝牛-礼仪模特人才库</title>
+		<link rel="stylesheet" href="css/bootstrap.css" type="text/css" />
+		<link rel="stylesheet" href="css/cj.css" type="text/css" />
+		<link rel="stylesheet" href="css/font-awesome.min.css" />
+		<link rel="stylesheet" href="css/style.css" type="text/css" />
+		<link rel="stylesheet" href="css/buttons.css" type="text/css"/>
+		<link rel="stylesheet" href="css/no.css" type="text/css"/>		
+	    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+	    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	    <!--[if lt IE 9]>
+	      <script src="http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+	      <script src="http://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+	    <![endif]-->	
+	</head>
+	<body>
+		<!--头部-->
+		<div header-View></div>
+		<!--购物车-->
+		<div class="model-shopcart">
+		<form class="form-horizontal" id="shopCart">
+			<table>
+				<tr>
+					<td colspan="8" class="text-center"><h1>确认人员数量</h1></td>
+				</tr>
+				<tr>
+					<th class="text-center" width="50"><input type="checkbox" id="checkall"></th>
+					<th class="text-center" width="100">缩略图</th>
+					<th class="text-center" width="120">类型</th>
+					<th class="text-center" width="120">昵称</th>
+					<th class="text-center" width="180">工作日期</th>
+					<th class="text-center" width="100">&nbsp;</th>
+					<th class="text-center" width="130">薪酬小计</th>
+					<th class="text-center" width="140">操作</th>
+				</tr>
+				<!--按天计算-->
+				<tr>
+					<td class="text-center"><input type="checkbox" name="checklist" value="101"></th></td>
+					<td class="text-center"><a href="modelDetails.html"><img src="img/model.jpg" width='50'></a></td>
+					<td class="text-center">模特</td>
+					<td class="text-center">模特昵称小林</td>
+					<td class="text-center"><p>2015-12-04</p><p>至</p><p>2015-12-05</p></td>
+					<td class="text-center">2天</td>
+					<td class="text-center"><strong class="red">100</strong>元</td>
+					<td class="text-center"><a href="javascript:;" onclick="modelCart.del(101,this)" class="button button-caution button-small">删除</a></td>
+				</tr>
+				<!--按小时计算-->
+				<tr>
+					<td class="text-center"><input type="checkbox" name="checklist" value="102"></th></td>
+					<td class="text-center"><a href="modelDetails.html"><img src="img/model.jpg" width='50'></a></td>
+					<td class="text-center">模特</td>
+					<td class="text-center">模特昵称小林</td>
+					<td class="text-center"><p>2015-12-04</p><p>至</p><p>2015-12-04</p></td>
+					<td class="text-center">6小时</td>
+					<td class="text-center"><strong class="red">100</strong>元</td>
+					<td class="text-center"><a href="javascript:;" onclick="modelCart.del(102,this)" class="button button-caution button-small">删除</a></td>
+				</tr>
+				<!--已选中模特value值-->
+				<input type="hidden" id="modelCheckValue" value="">
+				<tr>
+					<td colspan="8">
+						<a href="javascript:;" class="button button-royal pull-right" onclick="modelCart.balance()">结算</a>
+						<div class="allMoney pull-right">共 <span id="sumModel">0</span> 位人员，工资总计：<strong class="red" id="sumMoney">0</strong> 元</div>
+					</td>
+				</tr>
+			</table>
+		</form>
+		</div>
+		<!--底部-->
+		<div footer-View></div>
+	</body>
+</html>
+<script src="script/jquery-1.11.1.min.js" type="text/javascript"></script>
+<script src="script/bootstrap.min.js" type="text/javascript"></script>
+<script src="script/jquery.alerts.js" type="text/javascript"></script>
+<script src="script/angular-1.3.0.js" type="text/javascript"></script>
+<script src="js/ngMain.js" type="text/javascript"></script>
+<script src="js/tongyong.js" type="text/javascript"></script>
+<script src="js/model.js"></script>
+
+

@@ -1,0 +1,26 @@
+﻿{
+	"success": true, 
+	"totalRows": 3, 
+	"curPage": 1,
+	"data": [
+		{
+			"ID": 1,
+			"compan": "温州三信融民间融资信息服务有限公司",
+			"compan_id":11,
+			"Date": "2015-4-23"
+		},
+		{
+			"ID": 2,
+			"compan": "温州玛氏贸易有限公司",
+			"compan_id":12,
+			"Date": "2015-4-23"
+		},
+		{
+			"ID": 3,
+			"compan": "温州王朝大酒店",
+			"compan_id":13,
+			"Date": "2015-4-23"
+		}
+		
+	]
+}

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1">
+		<meta name="keywords" content="" />
+		<meta name="Copyright" content="" />
+		<meta name="Description" content="">
+		<title>火星校园-余额支付</title>
+		<link rel="stylesheet" href="css/bootstrap.css" type="text/css" />
+		<link rel="stylesheet" href="css/buttons.css" type="text/css"/>
+		<link rel="stylesheet" href="css/font-awesome.min.css" />
+		<link rel="stylesheet" href="css/cj.css" type="text/css" />
+		<link rel="stylesheet" href="css/style.css" type="text/css" />
+		<link rel="stylesheet" href="css/user.css" type="text/css" />
+	    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+	    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	    <!--[if lt IE 9]>
+	      <script src="http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+	      <script src="http://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+	    <![endif]-->	
+	</head>
+	<body>
+		<!--头部-->
+		<header>
+			<div class="header">
+				<!--LOGO-->
+				<a href="index.html" title="火星校园"><img src="img/LOGO.png" class="logo"/></a>
+				<!--导航-->
+				<nav>
+					<ul>
+						<li><a href="index.html">首页</a></li>
+						<li><a href="parttimejob.html">兼职招聘</a></li>
+						<li><a href="">模特礼仪</a></li>					
+						<li><a href="business_centre.html">企业中心</a></li>
+						<li><a href="join.html">加入我们</a></li>
+						<!--地区定位-->
+						<li><a href="#">温州</a></li>
+					</ul>
+				</nav>
+				<!--搜索-->
+				<div class="search">
+					<form  action="/LCWeb/Home/RecruitmentSearch" method="post" id="search_form">
+						<input type="text" id="SearchKey" name="SearchKey" placeholder="请输入关键字" class="search_inp" />
+						<input type="submit" class="seach_img" value="">
+					</form>
+				</div>
+				<!--登录注册-->
+				<div class="loginbox">
+					<!--未登录-->
+					<a href="login_user.html" class="button button-primary button-small">登录</a>
+					<!--已登录-->
+					<!-- <a href="user_index.html" class="button button-action button-small">会员中心</a> -->
+				</div>
+			</div>
+		</header>
+		<!--支付-->
+		<!--企业中心-->
+		<div class="userbox">
+			<div class="user_leftbox">
+				<dl>
+					<dt>账号管理</dt>
+					<dd class="action"><a href="co_plusjob.html">发布职位<i class="fa fa-plus"></i></a></dd>
+					<dd><a href="co_recruitment.html">职位管理<i class="fa fa-chevron-right"></i></a></dd>										
+					<dd><a href="co_applicants.html">报名管理<i class="fa fa-chevron-right"></i></a></dd>
+					<dd><a href="co_working.html">工作管理<i class="fa fa-chevron-right"></i></a></dd>
+					<dd><a href="co_talentpool.html">人才库<i class="fa fa-chevron-right"></i></a></dd>
+				</dl>
+			</div>
+			<div class="user_rightbox">
+				<div class="resumebox">
+				<div class="title">余额支付</div>
+				<form class="form-horizontal" role="form" id="" method="post" action="">
+					<div class="form-group">
+						<label class="form-left control-label">职位名称</label>
+						<div class="form-right mt">
+					      	<div class="form-control noall">XXXX</div>
+					    </div>
+					</div>
+					<div class="form-group">
+						<label class="form-left control-label">总计薪资</label>
+						<div class="form-right mt">
+					      	<div class="form-control noall"><span class="zj nopad">10元</span></div>
+					    </div>
+					</div>
+					<div class="form-group">
+					  	<label for="nickname" class="form-left control-label">支付密码</label>
+					  	<div class="form-right mt">
+					      	<input type="password" class="form-control" id="password" name="password" placeholder="支付密码">
+					    </div>
+					</div>
+					<div class="form-group">
+					    <div class="mar-left3 form-right">
+					      <button type="submit" class="button button-block button-rounded button-primary" style="width:100%;">余额支付</button>
+					    </div>
+					</div>
+					<div class="form-group">
+					    <div class="mar-left3 form-right">
+					       <a href="pay.html">选择其他支付方式。</a>
+					    </div>
+					</div>
+				</form>
+				</div>
+			</div>
+		</div>
+		<!--底部-->
+		<footer>
+			<div class="footer_nr">
+				<p> 
+					<a href="about.html" target="blank">关于我们</a> 
+					<b>|</b> 
+					<a href="contactus.html" target="_blank">联系我们</a> 
+					<b>|</b> 
+					<a href="terms.html" target="_blank">服务条款</a> 
+					<b>|</b> 
+					<a href="link.html" target="_blank">友情链接</a>
+					<b>|</b>
+					<a href="help.html" target="_blank">帮助中心</a>
+				</p>
+				<p>
+					Copyright ©2015  www.huoxingxiaoyuan.com  火星校园版权所有 浙ICP备 号
+				</p>
+			</div>
+		</footer>
+	</body>
+</html>
+<script src="script/jquery-1.11.1.min.js" type="text/javascript"></script>
+<script src="script/bootstrap.min.js" type="text/javascript"></script>
+<script type="text/javascript" src="js/tongyong.js" ></script>
+

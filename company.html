@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1">
+		<meta name="keywords" content="" />
+		<meta name="Copyright" content="" />
+		<meta name="Description" content="">
+		<title>窝牛-公司介绍</title>
+		<link rel="stylesheet" href="css/bootstrap.css" type="text/css" />
+		<link rel="stylesheet" href="css/buttons.css" type="text/css"/>
+		<link rel="stylesheet" href="css/font-awesome.min.css" />
+		<link rel="stylesheet" href="css/cj.css" type="text/css" />
+		<link rel="stylesheet" href="css/style.css" type="text/css" />
+	    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+	    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	    <!--[if lt IE 9]>
+	      <script src="http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+	      <script src="http://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+	    <![endif]-->	
+	</head>
+	<body>
+		<!--头部-->
+		<header>
+			<div class="header">
+				<!--LOGO-->
+				<a href="index.html" title="火星校园"><img src="img/LOGO.png" class="logo"/></a>
+				<!--导航-->
+				<nav>
+					<ul>
+						<li><a href="index.html">首页</a></li>
+						<li><a href="parttimejob.html">兼职招聘</a></li>
+						<li><a href="">模特礼仪</a></li>					
+						<li><a href="business_centre.html">企业中心</a></li>
+						<li><a href="join.html">加入我们</a></li>
+						<!--地区定位-->
+						<li><a href="#">温州</a></li>
+					</ul>
+				</nav>
+				<!--搜索-->
+				<div class="search">
+					<form  action="/LCWeb/Home/RecruitmentSearch" method="post" id="search_form">
+						<input type="text" id="SearchKey" name="SearchKey" placeholder="请输入关键字" class="search_inp" />
+						<input type="submit" class="seach_img" value="">
+					</form>
+				</div>
+				<!--登录注册-->
+				<div class="loginbox">
+					<!--未登录-->
+					<a href="login_user.html" class="button button-primary button-small">登录</a>
+					<!--已登录-->
+					<!-- <a href="user_index.html" class="button button-action button-small">会员中心</a> -->
+				</div>
+			</div>
+		</header>
+		<!--公司介绍主体-->
+		<div class="public_box">
+			<div class="ckres_box">
+				<div class="resinfo">
+					<div class="reaimg"><img src="img/touxiang.png"></div>
+					<div class="ckres_title">
+						<span class="resname">公司名称</span>
+					</div>
+					<!--关注企业按钮-->
+					<button type="button" class="btn btn-success btn-sm" style="display: block;" id="on_follow" onclick="follow.on(44)">关注该公司</button>
+					<!--取消关注企业按钮-->
+					<button type="button" class="btn btn-success btn-sm disabled" id="off_follow" onclick="follow.off(44)">已关注</button>
+				</div>
+				<div class="bt_title">基本资料</div>
+				<table class="res_table">
+					<tr>
+						<th><span>公司性质：</span></th>
+						<td>私营企业</td>
+					</tr>
+					<tr>
+						<th><span>所属行业：</span></th>
+						<td>电子</td>
+					</tr>	
+					<tr>
+						<th><span>公司规模：</span></th>
+						<td>50-100人</td>
+					</tr>
+					<tr>
+						<th><span>所在地区：</span></th>
+						<td>浙江省-温州市-鹿城区</td>
+					</tr>
+					<tr>
+						<th><span>公司地址：</span></th>
+						<td>府东家园<span class="checkmap" onclick="address_map(120.709046,28.004967);"><i class="fa fa-map-marker"></i>查看地图</span></td>
+					</tr>
+					<tr>
+						<th><span>公车路线：</span></th>
+						<td>6路，8路，9路，22路物华天宝站下车</td>
+					</tr>
+				</table>
+				<div class="bt_title">公司介绍</div>
+				<table class="res_table">
+					<tr>
+						<th><span>公司介绍：</span></th>
+						<td>1995年12月，好丽友食品有限公司成立，成为好丽友（中国）事业的开端。17年来，好丽友从无到有，逐渐成长为拥有五家独立法人企业，跨越四个品类，渠道遍及全国，年销售额超过50亿元的综合性食品企业，最近10年平均增长率超过40%。
+尼尔森零售研究结果表明，2012年，在全国现代通路（ModernTrade），好丽友派类产品市场占有率稳居第一，遥遥领先于排名第二的厂商。口香糖占据了第二的位置。饼干业务继续高速成长，已排名前五。历经7年的努力，好丽友在膨化品类已站稳脚跟，并逐步向第一集团靠近。
+成绩的取得，在于好丽友秉承“培育人才、创造价值、奉献社会”的经营理念。在日常经营中，好丽友始终坚持OnlyOrion精神，专注于核心品牌的发展，通过差异化（Differentiation）、选择与集中（Choice&Focus）、步步为盈（StepbyStep）以及本地化（Localization）战略营造顾客满意（Customers’Satisfaction）。
+市场上的成功为好丽友赢得了荣誉和尊重。2008年4月，国家商标局认定“好丽友”为驰名商标。2010年4月以来，好丽友派</td>
+					</tr>
+					<!--公司环境照，假如有的话-->
+					<tr>
+						<td colspan="2">
+							<ul class="gallery">
+								<li><a href="img/img03.jpg"><img src="img/img03.jpg" /></a></li>
+								<li><a href="img/img02.jpg"><img src="img/img02.jpg" /></a></li>
+								<li><a href="img/img01.jpg"><img src="img/img01.jpg" /></a></li>
+								<li><a href="img/img02.jpg"><img src="img/img02.jpg" /></a></li>
+								<li><a href="img/img01.jpg"><img src="img/img01.jpg" /></a></li>
+							</ul>
+						</td>
+					</tr>
+				</table>
+				<div class="bt_title">公司正在招聘的兼职工作</div>
+				<table class="res_table">
+					<tr>
+						<td colspan="2">1</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+		<!--底部-->
+		<footer>
+			<div class="footer_nr">
+				<p> 
+					<a href="about.html" target="blank">关于我们</a> 
+					<b>|</b> 
+					<a href="contactus.html" target="_blank">联系我们</a> 
+					<b>|</b> 
+					<a href="terms.html" target="_blank">服务条款</a> 
+					<b>|</b> 
+					<a href="link.html" target="_blank">友情链接</a>
+					<b>|</b>
+					<a href="help.html" target="_blank">帮助中心</a>
+				</p>
+				<p>
+					Copyright ©2015  www.huoxingxiaoyuan.com  火星校园版权所有 浙ICP备 号
+				</p>
+			</div>
+		</footer>
+	</body>
+</html>
+<script src="script/jquery-1.11.1.min.js" type="text/javascript"></script>
+<script src="script/bootstrap.min.js" type="text/javascript"></script>
+<script src="script/jquery.alerts.js" type="text/javascript"></script>
+<script type="text/javascript" src="js/tongyong.js" ></script>
+<script type="text/javascript" src="js/photozs.js" ></script>
+<script>
+	//关注，取消企业，resId=企业ID
+	var follow={
+			//关注收藏
+			on:function(resId){
+				
+//				$.ajax({
+//					url:"",
+//					type:"get",
+//					data:{'resId':resId},
+//					dataType:"json",
+//					success: function (result) {
+//		                if (result.status == 0) {//已登录，收藏成功
+//		                    $("#on_follow").hide();
+//							$("#off_follow").show(50);
+//		                }else if(){//未登录，调整到登陆界面
+//		                	jQuery.jGrowl("请先登录，立即跳转", {
+//							  beforeClose: function(e,m) {
+//							    window.location.href=;
+//							  }});
+//		                }else{//错误
+//		                	jQuery.jGrowl(result.msg);
+//		                }
+//		            }
+//				});
+				
+			},
+			//取消关注收藏
+			off:function(resId){
+//				$.ajax({
+//					url:"",
+//					type:"get",
+//					data:{'resId':resId},
+//					dataType:"json",
+//					success: function (result) {
+//		                if (result.status == 0) {//已登录，取消收藏
+//		                    $("#off_follow").hide();
+//							$("#on_follow").show(50);
+//		                }else if(){//未登录，调整到登陆界面
+//		                	jQuery.jGrowl("请先登录，立即跳转", {
+//							  beforeClose: function(e,m) {
+//							    window.location.href=;
+//							  }});
+//		                }else{//错误
+//		                	jQuery.jGrowl(result.msg);
+//		                }
+//		            }
+//				});
+				
+			}
+	};
+</script>
